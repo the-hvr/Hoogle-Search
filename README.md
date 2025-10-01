@@ -126,6 +126,9 @@ HoogleSearch is a lightweight, responsive web application that allows users to s
 ├── package-lock.json
 └── package.json
 
+# Screenshot
+<img width="1920" height="1080" alt="{8122DC49-1A6F-4DEF-99CA-D9707B549DE2}" src="https://github.com/user-attachments/assets/6bc70e6e-4cdd-4d0b-83e2-927282105d0e" />
+<img width="1920" height="1080" alt="{FAF8EAD3-5853-4707-96C6-D24D4ADE927D}" src="https://github.com/user-attachments/assets/abb6a55e-79de-47a2-9448-ccb755970729" />
 
 
 
