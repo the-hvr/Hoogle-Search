@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: "Comfortaa", sans-serif;
+}
+ 
+.nav {
+    height: 90px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.nav .logo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav .logo h1 {
+    font-size: 3rem;
+    margin-left: 2rem;
+}
+
+.social {
+    margin-right: 30px;
+}
+
+.social a i {
+    font-size: 2rem;
+    color: black;
+}
+
+.heroSection {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("/graphic-presentation-background-11red11blue.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+}
+
+.heroSection h2 {
+    color: white;
+    font-size: 50px;
+    margin-top: 90px;   
+}
+
+.heroSection p {
+    color: rgba(255, 255, 255, 0.66);
+    font-size: 18px;
+}
+
+.heroSection #tagline {
+    color: white;
+    font-size: 36px;
+    font-weight: 900;  
+    margin-top: 33px; 
+}
+
+.heroSection #subTagline {
+    color: white;color: rgba(255, 255, 255, 0.66);font-size: 18px;
+    width: 50vw;
+    margin-top: 33px;
+}
+
+.btn {
+    width: 450px;
+    margin-top: 33px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+
+.btn div {
+    width: 190px;
+    height: 40px;
+    color: white;
+    font-weight: 700;
+    border-radius: 25px;
+    border: 2px solid white;
+    padding: 9px;
+}
+
+.sigup {
+    color: black;
+    background-color: rgba(255, 145, 0, 0.961);
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 35px;
+    text-align: center;
+}
+
+.about h3 {
+    font-size: 36px;
+    margin: 35px 0 25px;
+}
+
+.about div {
+    width: 50vw;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.about h4 {
+    font-size: 26px;
+    margin: 35px 0 25px;
+}
+
+.about ul li {
+    font-size: 18px;
+   line-height: 32px;
+}
+
+.hr {
+    width: 90vw;
+    margin: 35px auto;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.628);
+}
+
+.footer {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.765);
+    width: 100vw;
+    margin-top: 10px;
+    background-color: #232F3E;
+}
+
+.footer .border {
+    height: 35px;
+    width: 100vw;
+    background-color: #37475A;
+}
+
+.footer .copyright {
+    padding: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info {
+    padding: 32px;
+    background-color: #131A22;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.copyright div:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.info div:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+
+/* Mobile Responisveness */
+@media (max-width: 480px) {
+    .nav {
+        height: 70px;
+        padding: 10px 0;
+    }
+
+    .nav .logo h1 {
+        font-size: 1.8rem; 
+        margin-left: 0;
+        margin-top: 5px;
+    }
+
+    .nav .logo img {
+        height: 45px;
+    }
+
+    .social {
+        margin-right: 18px;
+    }
+
+    .social a i {
+        font-size: 1.4rem;
+        margin-top: 5px;
+    }
+
+    .heroSection {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .heroSection h2 {
+        font-size: 24px;
+        margin-top: 50px;
+    }
+
+    .heroSection a img {
+        height: 150px;
+    }
+
+    .heroSection p {
+        font-size: 14px;
+    }
+
+    .heroSection #tagline {
+        font-size: 20px;
+        margin-top: 25px;
+    }
+
+    .heroSection #subTagline {
+        font-size: 14px;
+        width: 90vw;  /* full width for readability */
+        margin-top: 25px;
+    }
+
+    .btn {
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+        margin-top: 40px;
+    }
+
+    .btn div {
+        width: 70%;
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .about h3 {
+        font-size: 22px;
+    }
+
+    .about div {
+        width: 80vw;
+        font-size: 13px;
+        line-height: 24px;
+    }
+
+    .about h4 {
+        font-size: 18px;
+    }
+
+    .about ul {
+        width: 85vw;
+    }
+
+    .about ul li {
+        font-size: 13px;
+        line-height: 24px;
+    }
+
+    .footer {
+        font-size: 12px;
+    }
+
+    .footer .copyright {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .info {
+        padding: 20px;
+        gap: 10px;
+        text-align: center;
+    }
+}
+
+

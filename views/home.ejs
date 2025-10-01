@@ -1,0 +1,53 @@
+<!--starter code-->
+<%- include("partials/starter.ejs"); %>
+
+<body>
+    <!--header section-->
+    <%- include("partials/nav.ejs"); %>
+    
+
+    <!--main section-->
+    <main>
+        <div class="heroSection">
+            <div><h2>Explore the World with</h2></div>
+            <a href="/search">
+                <div class="img"><img src="/hoggle.png" alt="hoogle" height="250px"></div>
+            </a>
+            
+            <p>&uarr; Click. Type. Search. Discover</p>
+            <div id="tagline">Images that inspire, <br> knowledge that informs.</div>
+            <div id="subTagline">Hoogle uses Pixabay & Wikipedia APIs to bring you
+                 stunning <br> images  and instant descriptions for anything you search.</div>
+            <div class="btn">
+                <div class="sigup">Sign up for free</div>
+                <div class="learn">Learn about us</div>
+            </div>
+        </div>
+
+        <!--about the project-->
+        <div class="about">
+            <span><img src="/h-logo.png" alt="h-logo" height="90px"></span>
+            <h3>About our Project</h3>
+            <div>Hoogle is a simple yet powerful search web app built with Node.js and Express. <br>
+                It combines two free APIs — Pixabay for images and Wikipedia for descriptions — <br> to give you both visual results
+                and knowledge in one place.
+            </div>
+
+            <ul>
+                <h4>The project demonstrates how to:</h4>
+                <li>Use Express.js for server-side rendering.</li>
+                <li>Handle routes and queries from a search box.</li>
+                <li>Fetch live data from third-party APIs.</li>
+                <li>Render results dynamically using EJS templates.</li>
+                <li>Manage environment variables with dotenv for API keys.</li>
+            </ul>
+        </div>
+    </main>
+    
+
+    <!--footer section-->
+    <%- include("partials/footer.ejs"); %>
+
+    <script src="/index.js"></script>
+</body>
+</html>

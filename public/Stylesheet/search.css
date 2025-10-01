@@ -1,0 +1,223 @@
+
+.searchbox {
+    height: 52px;
+    width: 40vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    border: 4px solid white;
+    border-radius: 25px ;
+    overflow: hidden;
+    margin-bottom: 1.6rem;
+}
+
+.searchbox i {
+    width: 10%;
+    font-size: 1.5rem;
+    padding: 13px;
+    color: white;
+}
+
+.searchbox input {
+    width: 70%;
+    height: 100%;
+    color: white;
+    font-size: 1.3rem;
+    background-color: transparent;
+    padding: 10px;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.searchbox .searchBtn {
+    width: 22%;
+    height: 100%;
+    color: white;
+    font-size: 1.2rem;
+    background-color: orange;
+    padding: 15px;
+    overflow: hidden;
+    border: none;
+}
+
+.container {
+    width: 92vw;
+    padding: 25px;
+    margin: -220px auto 0 ;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.tittle {
+    font-size: 65px;
+    font-weight: 900;
+    margin: 20px 0;
+}
+
+.discription {
+    font-size: 18px;
+    margin-bottom: 20px;
+    width: 90%;
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;    
+    gap: 20px;          
+    justify-content: flex-start; 
+    padding: 20px 10px;
+    background-color: #fff;  
+}
+
+.img-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 320px;       
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.img-card:hover {
+    transform: scale(1.1);
+    transform-origin: center;
+}
+
+.img-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;   
+    border-radius: 5px;
+}
+
+.img-card p {
+    margin: 3px 0;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.imgIcon {
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    opacity: 0.8;
+}
+
+.navBtn {
+    height: 40px;
+    width: 160px;
+    border-radius: 25px;
+    margin: 16px auto;
+    background-color: orange;
+    padding: 0 5px 0 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.navBtn a {
+    height: 31px;
+    width: 31px;
+    padding: 6px;
+    overflow: hidden;
+    border-radius: 50%;
+    color: orange;
+    background-color: black;
+}
+
+
+.error {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("/Picsart_25-10-01_20-52-58-045.png");
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+/* Mobile Responisveness */
+@media (max-width: 480px) {
+    .searchbox {
+        width: 80vw;
+        height: 40px;
+        flex-direction: row;
+        border: 3px solid white;
+        border-radius: 20px;
+        margin-bottom: 1rem;
+    }
+
+    .searchbox i {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .searchbox input {
+        width: 65%;
+        font-size: 1rem;
+        padding: 8px;
+    }
+
+    .searchbox .searchBtn {
+        width: 30%;
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .container {
+        width: 94vw;
+        padding: 15px;
+        margin: -280px auto 0;
+    }
+
+    .tittle {
+        font-size: 30px;
+        margin: 15px 0;
+    }
+
+    .discription {
+        font-size: 14px;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .images {
+        gap: 10px;
+        padding: 10px 5px;
+        justify-content: center;
+    }
+
+    .img-card {
+        width: 90%;
+        padding: 5px;
+    }
+
+    .img-card img {
+        height: 150px;
+    }
+
+    .img-card p {
+        font-size: 0.8rem;
+    }
+
+    .imgIcon {
+        font-size: 0.8rem;
+        padding: 3px;
+    }
+
+    .error {
+    height: 150px;
+    width: 340px;
+    margin: 50px auto;
+    }
+}
+

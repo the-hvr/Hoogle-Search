@@ -1,0 +1,65 @@
+<!--starter code-->
+<%- include("partials/starter.ejs"); %>
+
+<body>
+    <!--header section-->
+    <%- include("partials/nav.ejs"); %>
+
+    <main>
+        <div class="heroSection">
+            <div>
+                <h2>Explore the World with</h2>
+            </div>
+            <a href="/">
+                <div class="img"><img src="/hoggle.png" alt="hoogle" height="250px" id="hoogleLogo"></div>
+            </a>
+    
+    
+            <div>
+                <form action="/search" method="get">
+                    <div class="searchbox">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="search" name="q" id="search" placeholder="Search here..." required>
+                        <button type="submit" class="searchBtn">Search</button>
+                    </div>
+                </form>
+            </div>
+            <p> Type. Search. Discover </p>
+        </div>
+    </main>
+
+    <!--Result section-->
+    <div class="container">
+        <div class="tittle">
+            <%= q %>
+        </div>
+        <div class="discription">
+            <%= description %>
+        </div>
+        <div class="hr"></div>
+        
+        <div class="images">
+        <% for (let img of images) { %>
+            <div class="img-card">
+                <img src="<%= img.webformatURL %>" alt="<%= q %>">
+                <div class="imgIcon">
+                    <p><i class="fa-solid fa-eye"></i> <%= img.views %>  
+                        <i class="fa-solid fa-circle-down"></i> <%= img.downloads %></p>
+                </div>
+            </div>
+        <% } %>
+    </div>
+    </div>
+
+    <!--navigation btn-->
+    <div class="navBtn">
+        <div class="topBtn">Go To Top</div>
+        <a href="/"><i class="fa-solid fa-house"></i></a>
+    </div>
+
+    <!--footer section-->
+    <%- include("partials/footer.ejs"); %>
+    <script src="/index.js"></script>
+</body>
+</html>
+
