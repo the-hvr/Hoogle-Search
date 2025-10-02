@@ -127,6 +127,8 @@ HoogleSearch is a lightweight, responsive web application that allows users to s
 # Screenshot
 <img width="1920" height="1080" alt="{8122DC49-1A6F-4DEF-99CA-D9707B549DE2}" src="https://github.com/user-attachments/assets/6bc70e6e-4cdd-4d0b-83e2-927282105d0e" />
 <img width="1920" height="1080" alt="{FAF8EAD3-5853-4707-96C6-D24D4ADE927D}" src="https://github.com/user-attachments/assets/abb6a55e-79de-47a2-9448-ccb755970729" />
+<img width="1920" height="1080" alt="{1EE7DA14-BC5D-4F35-AD80-FAF02453B1E8}" src="https://github.com/user-attachments/assets/174d0ecd-7bb0-49c2-afce-8452c1a52835" />
+
 
 
 
@@ -137,4 +139,5 @@ This project is open-source under the MIT License
    1. You must give credit to @Harshvardhan Raj if you use this project.
 
    2. Commercial use is not allowed.
+
 
