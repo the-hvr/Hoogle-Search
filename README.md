@@ -14,9 +14,7 @@ HoogleSearch is a lightweight, responsive web application that allows users to s
 
  4. The results, including images and descriptions, are rendered dynamically using EJS templates.
 
- 5. Users can click images to view them in full size.
-
- 6. If the route is invalid or no results are found, a custom 404 page is displayed.
+ 5. If the route is invalid or no results are found, a custom 404 page is displayed.
 
 
 
@@ -139,3 +137,4 @@ This project is open-source under the MIT License
    1. You must give credit to @Harshvardhan Raj if you use this project.
 
    2. Commercial use is not allowed.
+
